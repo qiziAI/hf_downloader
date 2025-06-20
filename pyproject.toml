@@ -10,9 +10,9 @@ dependencies = [
 ]
 
 [project.scripts]
-hf-mirror-download = "hf_downloader.cli:download_model_main"
-hf-download = "hf_downloader.cli:download_model_main"
-hfd = "hf_downloader.cli:download_model_main"
+hf-mirror-download = "hf_mirror_downloader.cli:download_model_main"
+hf-download = "hf_mirror_downloader.cli:download_model_main"
+hfd = "hf_mirror_downloader.cli:download_model_main"
 
 [build-system]
 requires = ["setuptools>=61.0"]
