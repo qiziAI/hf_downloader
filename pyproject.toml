@@ -1,6 +1,6 @@
 [project]
-name = "hf-downloader"
-version = "0.1.0"
+name = "hf_mirror_downloader"
+version = "0.2.0"
 description = "Use HF mirror to download models with huggingface-cli"
 authors = [{ name = "Kang Bo", email = "532910708@qq.com" }]
 readme = "README.md"
@@ -10,6 +10,7 @@ dependencies = [
 ]
 
 [project.scripts]
+hf-mirror-download = "hf_downloader.cli:download_model_main"
 hf-download = "hf_downloader.cli:download_model_main"
 hfd = "hf_downloader.cli:download_model_main"
 
@@ -18,4 +19,4 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["hf_downloader"]
+packages = ["hf_mirror_downloader"]
